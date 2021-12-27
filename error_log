@@ -1,0 +1,10 @@
+[24-Nov-2022 08:00:51 America/Boise] PHP Warning:  require(/home2/thearwz2/public_html/jeem-digitcreator-co/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/thearwz2/public_html/jeem-digitcreator-co/index.php on line 24
+[24-Nov-2022 08:00:51 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/thearwz2/public_html/jeem-digitcreator-co/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/thearwz2/public_html/jeem-digitcreator-co/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home2/thearwz2/public_html/jeem-digitcreator-co/index.php on line 24
+[24-Nov-2022 08:00:57 America/Boise] PHP Warning:  require(/home2/thearwz2/public_html/jeem-digitcreator-co/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/thearwz2/public_html/jeem-digitcreator-co/index.php on line 24
+[24-Nov-2022 08:00:57 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/thearwz2/public_html/jeem-digitcreator-co/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home2/thearwz2/public_html/jeem-digitcreator-co/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home2/thearwz2/public_html/jeem-digitcreator-co/index.php on line 24
