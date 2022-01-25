@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+
+    .wrapper {
+        @apply mx-auto max-w-[1039px];
+    }
+    .main-heading{
+        @apply font-jeem ;
+    }
+
+    .pattern-1 {
+        @apply after:bg-p1 after:hover:bg-none after:z-0 after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:opacity-100 after:bg-[length:20px_auto] after:hover:transition after:hover:duration-150 after:hover:ease-out;
+    }
+
+    .form-input{
+        @apply w-full text-black border-[1px] border-dotted border-black text-sm outline-none py-1 px-3 leading-8;
+    }
+
+    .form-input-danger{
+        @apply w-full text-black border-[1px] border-dotted border-red-500 text-sm outline-none py-1 px-3 leading-8;
+    }
+
+    .page-section .forminput{
+        @apply  w-full text-black border-[1px] border-[#cacaca] text-sm outline-none py-1 px-3 my-2 leading-8;
+    }
+    .page-section .btn{
+        @apply bg-[#e2dbb5] hover:bg-[#cbbf7b] font-semibold text-sm rounded px-4 py-3 text-black;
+    }
+
+    .page-section h2{
+        @apply text-3xl [word-spacing:13px] my-1;
+    }
+    .page-section h3{
+        @apply text-2xl [word-spacing:13px] my-1 rtl:text-4xl rtl:font-bold;
+    }
+    .page-section h4{
+        @apply text-[1.45rem] [word-spacing:13px] ;
+    }
+    .page-section ul, ol{
+        @apply text-[0.95rem] list-decimal pl-6 my-6  rtl:text-xl;
+    }
+    .page-section a{
+        @apply text-primary-six;
+    }
+    
+    .page-section p{
+        @apply my-4 text-[1.3rem] break-words rtl:text-base rtl:font-semibold rtl:font-symbio;
+    }
+    
+    .post-body h1{
+        @apply relative font-semibold md:w-[80%] text-[2.5rem] before:block before:bg-[#bf0072] before:h-[1em] before:absolute before:left-[-2em] before:top-[0.25em] before:w-[6em] before:z-[-1];
+    }
+
+    .post-body h3{
+        @apply relative font-semibold md:w-[80%] text-[2.5rem];
+    }
+
+    .post-body blockquote{
+        @apply relative my-6 font-semibold md:w-[80%] text-[2.5rem] before:block before:bg-[#bf0072] before:h-[1em] before:absolute ltr:before:-left-[7rem] rtl:before:-right-[7rem] before:top-[7px] before:w-[6em] before:z-[-1];
+    }
+
+    .post-body sup{
+        @apply  bg-[#ff0] text-[#666] p-1;
+    }
+
+    .post-body .intro{
+        @apply text-[#8a8a8a] mb-4 pb-4 border-[#8a8a8a] border-b border-dashed;
+    }
+
+    .post-body  p{
+        @apply mb-4 text-[1.3rem] break-words  rtl:font-semibold rtl:font-symbio;
+    }
+    
+    .post-body  a{
+        @apply text-pink hover:text-opacity-70 font-symbio;
+    }
+
+    /* .post-body .footnotes ol li{
+        @apply bg-[#ff0] text-[#666] p-1;
+    }
+
+    .post-body .footnotes ol li,  .footnotes .footnote:target{
+        @apply bg-[#ff0] text-[#666] p-1;
+    } */
+
+    .side-icon{
+        @apply bg-black rounded-full w-[22px] h-[22px] text-center text-sm m-0 text-[#e0ded1] leading-5 pt-[4px] rtl:ml-[4px];
+    }
+
+    .nav-item{
+        @apply font-semibold hover:text-pink;
+    }
+    .active{
+        @apply text-pink;
+    }
+}
+
+
