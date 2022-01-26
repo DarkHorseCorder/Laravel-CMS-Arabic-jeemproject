@@ -1,0 +1,15 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family : 'Symbio';
+    src         : url('../fonts/symbio.ttf') format('ttf');
+    font-weight : normal;
+    font-style  : normal;
+}
