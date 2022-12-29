@@ -63,7 +63,7 @@ class PostsController extends Controller
             $path = $request->image->storeAs('blogs', $fileName, 'public');
             $request->merge(['image_path' => $path]);
         }
-
+        // die(var_dump($request->all()));
         $request->merge(['user_id'=> auth()->user()->id]);
 
         DB::beginTransaction();

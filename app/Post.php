@@ -15,7 +15,7 @@ class Post extends Model
 
     public $incrementing = true;
 
-    public $translatable = ['title', 'slug', 'meta_description', 'body'];
+    public $translatable = ['title','caption', 'slug', 'meta_description', 'body'];
 
     protected $fillable = [
         'title',
@@ -24,6 +24,7 @@ class Post extends Model
         'body',
         'slug',
         'image_path',
+        'caption',
         'user_id',
         'author_id',
         'is_published',

@@ -73,6 +73,15 @@
                     </div>
                 </div>
 
+                <div class="form-group border p-3 my-2">
+                    <label>Caption</label>
+                    @foreach(config('translatable.locales') as $locale)
+                    <div>
+                        <label class="required" for="caption_{{ $locale }}">Caption ({{ strtoupper($locale) }}) </label>
+                        <input type="text" class="form-control {{ $errors->has('caption') ? 'is-invalid' : '' }}" name="caption[{{ $locale }}]" id="caption_{{ $locale }}" value="{{ old('caption.'.$locale, '') }}" >
+                    </div>
+                    @endforeach
+                </div>
                 <div class="form-group">
                     <label class="required" for="author">Author {{ $locale }} </label>
                     <select class="form-control select2 {{ $errors->has('author_id') ? 'is-invalid' : '' }}" name="author_id" id="author" >
@@ -143,7 +152,23 @@
                         </div>
 
                 @endforeach
-
+                <div class="form-group">
+                    <script type="text/javascript">
+                        $(function () {
+                            $("#unlimited").click(function () {
+                                if ($(this).is(":checked")) {
+                                    console.log("checked")
+                                    // $("#masa_berlaku_from").attr("disabled", "disabled");
+                                    // $("#masa_berlaku_to").attr("disabled", "disabled");
+                                } else {
+                                    // $("#masa_berlaku_from").removeAttr("disabled");
+                                    // $("#masa_berlaku_to").removeAttr("disabled");
+                                }
+                            });
+                        });
+                    </script>
+                    <input type="checkbox" id="unlimited"> Schedule this post.
+                </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-success" name="action" value="save" >
                         {{ trans('global.save') }}
